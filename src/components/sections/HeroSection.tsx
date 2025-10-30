@@ -11,7 +11,7 @@ export const HeroSection = () => {
       <div className="max-w-6xl mx-auto w-full">
         <div className="text-center space-y-8 animate-fade-in-up">
           {/* Avatar */}
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-8 my-[24px]">
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl"></div>
               <img src={snehaPortrait} alt="Sneha Subbarayudu" className="relative w-32 h-32 rounded-full object-cover border-2 border-primary/50 shadow-lg" />
