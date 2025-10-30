@@ -1,10 +1,9 @@
 export const AboutSection = () => {
-  return (
-    <section id="about" className="min-h-screen flex items-center justify-center px-6 py-20">
+  return <section id="about" className="min-h-screen flex items-center justify-center px-6 py-20">
       <div className="max-w-4xl mx-auto w-full space-y-8">
         <div className="space-y-4 animate-fade-in-up">
           <p className="text-sm text-primary uppercase tracking-wider">About Me</p>
-          <h2 className="text-5xl md:text-6xl font-bold">
+          <h2 className="text-5xl font-bold md:text-4xl">
             Building things that <span className="text-gradient">matter</span>
           </h2>
         </div>
@@ -51,6 +50,5 @@ export const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

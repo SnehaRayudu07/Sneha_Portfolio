@@ -22,7 +22,7 @@ export const SkillsSection = () => {
       <div className="max-w-6xl mx-auto w-full space-y-16">
         <div className="text-center space-y-4 animate-fade-in-up">
           
-          <h2 className="text-5xl md:text-6xl font-bold">
+          <h2 className="text-5xl font-bold md:text-4xl">
             Diverse <span className="text-gradient">Skill Set</span>
           </h2>
         </div>
