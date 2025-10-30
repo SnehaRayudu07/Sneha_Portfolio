@@ -51,7 +51,7 @@ export const ProjectsSection = () => {
 
                   <div className="pt-4 border-t border-border/50">
                     <div className="flex flex-wrap gap-2">
-                      {project.tech.map(tech => <Badge key={tech} variant="secondary" className="bg-muted text-muted-foreground">
+                      {project.tech.map(tech => <Badge key={tech} variant="secondary" className="text-muted-foreground bg-zinc-50">
                           {tech}
                         </Badge>)}
                     </div>
