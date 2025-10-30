@@ -8,39 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 40 20% 97%;
-    --foreground: 0 0% 10%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card: 0 6% 17%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover: 10 17% 7%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 24 95% 63%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 38 95% 62%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 40 15% 90%;
-    --secondary-foreground: 0 0% 10%;
+    --secondary: 0 6% 17%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 40 10% 95%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 20 1% 48%;
+    --muted-foreground: 20 1% 48%;
 
-    --accent: 24 95% 63%;
-    --accent-foreground: 0 0% 10%;
+    --accent: 38 95% 62%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 40 15% 85%;
-    --input: 40 15% 85%;
-    --ring: 24 95% 63%;
+    --border: 0 6% 17%;
+    --input: 0 6% 17%;
+    --ring: 38 95% 62%;
 
-    --radius: 0.75rem;
+    --radius: 1.5rem;
     
-    --gradient-radial: radial-gradient(ellipse at center, hsl(40 20% 98%) 0%, hsl(40 20% 97%) 70%);
-    --gradient-shine: linear-gradient(135deg, hsl(24 95% 63% / 0.1) 0%, transparent 50%);
-    --shadow-glow: 0 0 40px hsl(24 95% 63% / 0.15);
+    --gradient-radial: radial-gradient(ellipse at center, hsl(0 0% 2%) 0%, hsl(0 0% 0%) 70%);
+    --gradient-shine: linear-gradient(135deg, hsl(38 95% 62% / 0.15) 0%, transparent 50%);
+    --shadow-glow: 0 0 50px hsl(38 95% 62% / 0.25);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
@@ -61,8 +61,8 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 40 20% 97%;
-    --foreground: 0 0% 10%;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
   }
 }
 
