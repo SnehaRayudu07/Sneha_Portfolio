@@ -1,18 +1,18 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Github, Linkedin, ArrowUp } from "lucide-react";
-
 export const ContactSection = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   };
-
-  return (
-    <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-20 relative">
+  return <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-20 relative">
       <div className="max-w-4xl mx-auto w-full space-y-16">
         <div className="text-center space-y-6 animate-fade-in-up">
-          <p className="text-sm text-primary uppercase tracking-wider">Contact</p>
-          <h2 className="text-5xl md:text-6xl font-bold">
+          
+          <h2 className="text-5xl font-bold md:text-4xl">
             Let's <span className="text-gradient">Connect</span>
           </h2>
           <p className="text-2xl text-muted-foreground italic max-w-2xl mx-auto">
@@ -22,10 +22,7 @@ export const ContactSection = () => {
 
         <Card className="p-8 md:p-12 bg-card/50 backdrop-blur-sm border-border animate-fade-in-up">
           <div className="grid md:grid-cols-2 gap-8">
-            <a
-              href="mailto:sneharayudu01@gmail.com"
-              className="group flex items-start gap-4 p-6 rounded-xl hover:bg-primary/5 transition-all duration-300 hover-lift"
-            >
+            <a href="mailto:sneharayudu01@gmail.com" className="group flex items-start gap-4 p-6 rounded-xl hover:bg-primary/5 transition-all duration-300 hover-lift">
               <div className="p-3 rounded-xl bg-primary/10 border border-primary/20 group-hover:bg-primary/20 transition-colors">
                 <Mail className="w-6 h-6 text-primary" />
               </div>
@@ -35,12 +32,7 @@ export const ContactSection = () => {
               </div>
             </a>
 
-            <a
-              href="https://linkedin.com/in/sneharayudu2003"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-start gap-4 p-6 rounded-xl hover:bg-primary/5 transition-all duration-300 hover-lift"
-            >
+            <a href="https://linkedin.com/in/sneharayudu2003" target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 p-6 rounded-xl hover:bg-primary/5 transition-all duration-300 hover-lift">
               <div className="p-3 rounded-xl bg-primary/10 border border-primary/20 group-hover:bg-primary/20 transition-colors">
                 <Linkedin className="w-6 h-6 text-primary" />
               </div>
@@ -50,12 +42,7 @@ export const ContactSection = () => {
               </div>
             </a>
 
-            <a
-              href="https://github.com/SnehaRayudu07"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-start gap-4 p-6 rounded-xl hover:bg-primary/5 transition-all duration-300 hover-lift"
-            >
+            <a href="https://github.com/SnehaRayudu07" target="_blank" rel="noopener noreferrer" className="group flex items-start gap-4 p-6 rounded-xl hover:bg-primary/5 transition-all duration-300 hover-lift">
               <div className="p-3 rounded-xl bg-primary/10 border border-primary/20 group-hover:bg-primary/20 transition-colors">
                 <Github className="w-6 h-6 text-primary" />
               </div>
@@ -83,13 +70,8 @@ export const ContactSection = () => {
       </div>
 
       {/* Scroll to top button */}
-      <Button
-        onClick={scrollToTop}
-        size="icon"
-        className="fixed bottom-8 right-8 rounded-full bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-      >
+      <Button onClick={scrollToTop} size="icon" className="fixed bottom-8 right-8 rounded-full bg-primary hover:bg-primary/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
         <ArrowUp className="h-5 w-5" />
       </Button>
-    </section>
-  );
+    </section>;
 };
