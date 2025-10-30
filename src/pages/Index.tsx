@@ -1,5 +1,4 @@
 import { Navigation } from "@/components/Navigation";
-import { Starfield } from "@/components/Starfield";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ExperienceSection } from "@/components/sections/ExperienceSection";
@@ -11,7 +10,6 @@ import { ContactSection } from "@/components/sections/ContactSection";
 const Index = () => {
   return (
     <div className="relative min-h-screen bg-background">
-      <Starfield />
       <Navigation />
       
       <main className="relative z-10">
