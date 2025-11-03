@@ -104,13 +104,16 @@ export const ExperienceSection = () => {
                           <>
                             <video
                               className="h-full w-full object-cover"
-                              src={videoSrc}
                               muted
                               loop
                               playsInline
                               autoPlay
+                              preload="metadata"
+                              crossOrigin="anonymous"
                               onClick={() => openVideo(videoSrc, `${exp.company} Demo`)}
-                            />
+                            >
+                              <source src={videoSrc} type="video/mp4" />
+                            </video>
                             <button
                               type="button"
                               aria-label="Maximize video"
@@ -166,11 +169,14 @@ export const ExperienceSection = () => {
               <div className="w-full flex items-center justify-center bg-black rounded-lg overflow-hidden">
                 <video
                   className="max-h-[85vh] max-w-[92vw] w-auto h-auto"
-                  src={activeVideo.src}
                   controls
                   autoPlay
                   playsInline
-                />
+                  preload="metadata"
+                  crossOrigin="anonymous"
+                >
+                  {activeVideo && <source src={activeVideo.src} type="video/mp4" />}
+                </video>
               </div>
             </div>
           )}
