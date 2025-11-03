@@ -3,16 +3,16 @@ import { Badge } from "@/components/ui/badge";
 import { Brain, Shield } from "lucide-react";
 const projects = [{
   title: "Deep Learning for Diabetic Retinopathy Detection",
-  type: "Major Project",
+  type: "Final Year Major Project (10/2024 – 03/2025)",
   icon: Brain,
-  description: "Built CNN models (ResNet50, InceptionV3) for multi-class classification of retinal fundus images to support early detection and prevention of blindness in diabetic patients.",
-  tech: ["TensorFlow", "Keras", "Kotlin", "CNN", "ResNet50", "InceptionV3"],
-  impact: "Clinical-grade accuracy for early diabetic retinopathy screening"
+  description: "Developed multi-class CNN with InceptionResNetV2 to classify retinal fundus images (No DR → PDR). Integrated model into a Kotlin + TFLite smartphone app for offline, on-device screening.",
+  tech: ["TensorFlow", "Keras", "InceptionResNetV2", "Kotlin", "TFLite", "CNN"],
+  impact: "86.6% accuracy • 0.93 Cohen's Kappa • Offline on-device DR detection"
 }, {
   title: "Phishing Detection Model",
-  type: "Smart India Hackathon 2023",
+  type: "Smart India Hackathon (09/2023 – 10/2023)",
   icon: Shield,
-  description: "Led a 6-member team to create 'Fishers,' a phishing detection web app achieving 95.53% accuracy using ensemble ML techniques. Delivered working prototype within 24 hours.",
+  description: "Directed a team of 6 to build 'Fishers' using Ensemble ML methods for website phishing detection; delivered a working solution in 24 hours.",
   tech: ["Python", "Scikit-Learn", "Ensemble ML", "Web Development"],
   impact: "95.53% accuracy • 24-hour delivery"
 }];

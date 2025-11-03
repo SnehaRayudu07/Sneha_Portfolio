@@ -1,5 +1,5 @@
 import { Dribbble, Instagram, Linkedin, ArrowRight, Github } from "lucide-react";
-import snehaPortrait from "@/assets/sneha-portrait.jpg";
+import snehaPortrait from "@/assets/ProfileSnehaNobg.png";
 export const HeroSection = () => {
   const scrollToAbout = () => {
     document.getElementById("about")?.scrollIntoView({
@@ -25,16 +25,12 @@ export const HeroSection = () => {
                   Product Designer & Developer
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  A passionate creator with 2+ years of experience in crafting intuitive digital experiences. 
-                  I blend design thinking with technical expertise to build products that users love.
+                  Product-minded technologist passionate about building user-centric products that merge design, data, and engineering.
+                  <br />
+                  <br />
+                  Co-founded early-stage startups from idea to launch, translating user insights and research into user-centric solutions.
                 </p>
-                <button
-                  onClick={scrollToAbout}
-                  className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all duration-300 group"
-                >
-                  <span className="text-lg font-medium">My story</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                {/* My story button hidden per request */}
               </div>
             </div>
 

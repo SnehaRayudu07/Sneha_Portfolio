@@ -1,21 +1,21 @@
 import { Card } from "@/components/ui/card";
 import { Code2, Smartphone, Brain, Palette } from "lucide-react";
 const skillCategories = [{
-  title: "Languages",
+  title: "Programming Languages",
   icon: Code2,
-  skills: ["Python", "Java", "Kotlin", "Dart", "C", "SQL", "HTML", "CSS", "JavaScript", "React Native"]
+  skills: ["Python", "Java", "Kotlin", "Dart", "C", "SQL"]
 }, {
-  title: "Frameworks & Tools",
+  title: "Mobile & Cross-Platform / Backend",
   icon: Smartphone,
-  skills: ["Flutter", "Firebase", "TensorFlow", "Scikit-Learn", "Figma", "Android Studio"]
+  skills: ["Android SDK", "React Native", "Flutter", "Firebase", "REST APIs", "Postgres", "Signal Protocol"]
 }, {
-  title: "Concepts",
+  title: "Machine Learning & Data Science",
   icon: Brain,
-  skills: ["Machine Learning", "Deep Learning", "Mobile App Development", "Software Engineering", "Product Management"]
+  skills: ["TensorFlow", "Keras", "Scikit-Learn", "NumPy", "Pandas", "Deep Learning", "CNNs"]
 }, {
-  title: "Design & Product",
+  title: "Product & Design",
   icon: Palette,
-  skills: ["UI/UX Design", "Product Strategy", "User Research", "Startup Leadership"]
+  skills: ["Product Strategy", "User Research", "Figma (UX/UI)", "Analytics (Amplitude, Firebase Analytics)"]
 }];
 export const SkillsSection = () => {
   return <section id="skills" className="min-h-screen flex items-center justify-center px-6 py-20">
