@@ -10,7 +10,7 @@
     "homepage": "https://sneharayudu07.github.io/Sneha_Portfolio/",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && node -e \"const fs=require('fs');fs.copyFileSync('dist/index.html','dist/404.html')\"",
+    "predeploy": "npm run build && node -e \"const fs=require('fs');fs.copyFileSync('dist/index.html','dist/404.html');fs.writeFileSync('dist/.nojekyll','')\"",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
