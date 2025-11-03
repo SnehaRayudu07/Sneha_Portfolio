@@ -6,8 +6,8 @@ import { useState } from "react";
 import hiveinLogo from "@/assets/LogoHiveIn.png";
 import houzeeLogo from "@/assets/LogoHouzee.png";
 import zobazeLogo from "@/assets/LogoZobaze.png";
-import hiveinDemo from "@/assets/HiveinDemo.mp4";
-import houzeeDemo from "@/assets/HouzeeDemo.mp4";
+const hiveinDemo = `${import.meta.env.BASE_URL}assets/HiveinDemo.mp4`;
+const houzeeDemo = `${import.meta.env.BASE_URL}assets/HouzeeDemo.mp4`;
 const experiences = [{
   company: "HiveIn",
   logo: hiveinLogo,
