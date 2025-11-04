@@ -23,7 +23,7 @@ export const SkillsSection = () => {
         <div className="text-center space-y-4 animate-fade-in-up">
           
           <h2 className="text-5xl font-bold md:text-4xl">
-            Diverse <span className="text-gradient">Skill Set</span>
+            <span className="text-gradient">Skill Set</span>
           </h2>
         </div>
 
@@ -42,7 +42,7 @@ export const SkillsSection = () => {
                   </div>
 
                   <div className="flex flex-wrap gap-3">
-                    {category.skills.map(skill => <span key={skill} className="px-4 py-2 rounded-full bg-muted border border-border text-foreground text-sm hover:bg-primary/10 hover:border-primary/30 transition-all duration-300">
+                    {category.skills.map(skill => <span key={skill} className="px-4 py-2 rounded-full bg-white border border-border text-black text-sm">
                         {skill}
                       </span>)}
                   </div>

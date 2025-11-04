@@ -6,8 +6,8 @@ import { useState } from "react";
 import hiveinLogo from "@/assets/LogoHiveIn.png";
 import houzeeLogo from "@/assets/LogoHouzee.png";
 import zobazeLogo from "@/assets/LogoZobaze.png";
-const hiveinDemo = `@../public/assets/HiveinDemo_v2.mp4`;
-const houzeeDemo = `${import.meta.env.BASE_URL}assets/HouzeeDemo_v2.mp4`;
+const hiveinDemo = `${import.meta.env.BASE_URL}assets/HiveinDemo-ezgif.com-video-to-webp-converter.webp`;
+const houzeeDemo = `${import.meta.env.BASE_URL}assets/HouzeeDemo-ezgif.com-video-to-webp-converter.webp`;
 const experiences = [{
   company: "HiveIn",
   logo: hiveinLogo,
@@ -67,11 +67,11 @@ export const ExperienceSection = () => {
         <div className="text-center space-y-4 animate-fade-in-up">
           
           <h2 className="text-5xl font-bold md:text-4xl">
-            Featured <span className="text-gradient">Experience</span>
+            <span className="text-gradient">Experience</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          {/* <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Building products that evoke my sense of pride
-          </p>
+          </p> */}
         </div>
 
         <div className="space-y-8">
@@ -100,20 +100,30 @@ export const ExperienceSection = () => {
                             </div>
                           );
                         }
+                        const isWebp = videoSrc.endsWith('.webp');
                         return (
                           <>
-                            <video
-                              className="h-full w-full object-cover"
-                              muted
-                              loop
-                              playsInline
-                              autoPlay
-                              preload="metadata"
-                              crossOrigin="anonymous"
-                              onClick={() => openVideo(videoSrc, `${exp.company} Demo`)}
-                            >
-                              <source src={videoSrc} type="video/mp4" />
-                            </video>
+                            {isWebp ? (
+                              <img
+                                src={videoSrc}
+                                alt={`${exp.company} demo`}
+                                className="h-full w-full object-cover"
+                                onClick={() => openVideo(videoSrc, `${exp.company} Demo`)}
+                              />
+                            ) : (
+                              <video
+                                className="h-full w-full object-cover"
+                                muted
+                                loop
+                                playsInline
+                                autoPlay
+                                preload="metadata"
+                                crossOrigin="anonymous"
+                                onClick={() => openVideo(videoSrc, `${exp.company} Demo`)}
+                              >
+                                <source src={videoSrc} type="video/mp4" />
+                              </video>
+                            )}
                             <button
                               type="button"
                               aria-label="Maximize video"
@@ -151,10 +161,7 @@ export const ExperienceSection = () => {
                       </Badge>)}
                   </div>
 
-                  {exp.hasVideo && <button className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors group/btn">
-                      <span className="text-sm font-medium">View Case Study</span>
-                      <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                    </button>}
+                  
                 </div>
               </div>
             </Card>)}
@@ -167,16 +174,24 @@ export const ExperienceSection = () => {
             <div className="space-y-3">
               <DialogTitle>{activeVideo.title}</DialogTitle>
               <div className="w-full flex items-center justify-center bg-black rounded-lg overflow-hidden">
-                <video
-                  className="max-h-[85vh] max-w-[92vw] w-auto h-auto"
-                  controls
-                  autoPlay
-                  playsInline
-                  preload="metadata"
-                  crossOrigin="anonymous"
-                >
-                  {activeVideo && <source src={activeVideo.src} type="video/mp4" />}
-                </video>
+                {activeVideo.src.endsWith('.webp') ? (
+                  <img
+                    src={activeVideo.src}
+                    alt={activeVideo.title}
+                    className="max-h-[85vh] max-w-[92vw] w-auto h-auto"
+                  />
+                ) : (
+                  <video
+                    className="max-h-[85vh] max-w-[92vw] w-auto h-auto"
+                    controls
+                    autoPlay
+                    playsInline
+                    preload="metadata"
+                    crossOrigin="anonymous"
+                  >
+                    <source src={activeVideo.src} type="video/mp4" />
+                  </video>
+                )}
               </div>
             </div>
           )}

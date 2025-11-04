@@ -6,7 +6,7 @@ const projects = [{
   type: "Final Year Major Project (10/2024 – 03/2025)",
   icon: Brain,
   description: "Developed multi-class CNN with InceptionResNetV2 to classify retinal fundus images (No DR → PDR). Integrated model into a Kotlin + TFLite smartphone app for offline, on-device screening.",
-  tech: ["TensorFlow", "Keras", "InceptionResNetV2", "Kotlin", "TFLite", "CNN"],
+  tech: ["TensorFlow", "Keras", "Kotlin", "TFLite", "CNN"],
   impact: "86.6% accuracy • 0.93 Cohen's Kappa • Offline on-device DR detection"
 }, {
   title: "Phishing Detection Model",
@@ -22,7 +22,7 @@ export const ProjectsSection = () => {
         <div className="text-center space-y-4 animate-fade-in-up">
           
           <h2 className="text-5xl font-bold md:text-4xl">
-            Research & <span className="text-gradient">Innovation</span>
+            My <span className="text-gradient">Projects</span>
           </h2>
         </div>
 
@@ -51,9 +51,14 @@ export const ProjectsSection = () => {
 
                   <div className="pt-4 border-t border-border/50">
                     <div className="flex flex-wrap gap-2">
-                      {project.tech.map(tech => <Badge key={tech} variant="secondary" className="text-muted-foreground bg-zinc-50">
+                      {project.tech.map(tech => (
+                        <span
+                          key={tech}
+                          className="px-4 py-2 rounded-full bg-white border border-border text-black text-sm"
+                        >
                           {tech}
-                        </Badge>)}
+                        </span>
+                      ))}
                     </div>
                   </div>
 

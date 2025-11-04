@@ -51,19 +51,16 @@ export const HeroSection = () => {
           {/* Right Content - Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 rounded-3xl blur-2xl"></div>
               <img
                 src={snehaPortrait}
                 alt="Sneha Subbarayudu"
-                className="relative w-full max-w-md rounded-3xl shadow-2xl border-4 border-primary/30 hover:scale-105 transition-transform duration-500"
+                className="relative w-full max-w-lg md:max-w-xl rounded-3xl"
               />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute top-20 left-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+      {/* Decorative Elements removed as requested */}
     </section>;
 };

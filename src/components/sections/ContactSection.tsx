@@ -65,7 +65,7 @@ export const ContactSection = () => {
         </Card>
 
         <div className="text-center text-sm text-muted-foreground animate-fade-in-up">
-          <p>© 2025 Sneha Subbarayudu. Built with passion and curiosity.</p>
+          <p>© 2025 Sneha Subbarayudu.</p>
         </div>
       </div>
 
